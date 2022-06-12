@@ -1,0 +1,17 @@
+﻿{
+  "Serilog": {
+    "Using": [
+      "Serilog.Sinks.Console",
+      "Serilog.Sinks.File"
+    ],    
+    "MinimumLevel": "Information",
+    "WriteTo": [
+      { "Name": "Console" },
+      {
+        "Name": "File",
+        //"Args": { "path": "Logs/log.txt" }
+        "Args": { "path": "C:\\Tareas\\AWS_CloudWatch_Uploader\\Logs\\log.txt" }        
+      }
+    ]
+  }
+}
